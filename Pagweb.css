@@ -1,0 +1,105 @@
+body{
+	background: rgba(0, 0, 0, .9);
+	margin: 0;
+	color: white;
+}
+.png{
+	width: 80px;
+	height: 80px;
+}
+
+.whide{
+   display: flex;
+   background:white ;
+   color: black;
+   text-align: center;
+}
+
+.black{
+	display: flex;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+.header::after {
+	content: '';
+	height: 100vh;
+	width: 100%;
+	background-image:url(n.jpg) ;
+	background.size:cover ;
+	background-position: center;
+	background-repeat: norepeat;
+	display: block;
+	filter: blur(10px);
+  transition: all 1000ms;
+}
+
+.bg-modal{
+	position: absolute;
+	z-index: 1;
+  top: 8%;
+	left: 35%;
+	margin.left: 145px;
+	margin-top: 105px;
+	height: 300px;
+	width: 350px;
+	text-align: center;
+}
+.logo{
+  width: 80px;
+  height: 80px;
+}
+
+
+.modal1{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 50px;
+}
+.icono{
+	text-align: center;
+	margin: 20px;
+}
+.modal2{
+  display: grid;
+  grid-template-areas: repeat(2, 1fr);
+
+}
+
+.text{
+	width: 300px;
+	margin-left: 200px;
+	padding: 50px;
+}
+.png2{
+	margin-left: 250px;
+	margin-top: 68px;
+	width: 125px;
+	height: 125px;
+}
+
+
+.title{
+	text-align: center;
+	margin: auto;
+	padding-top:50px ;
+	padding-bottom: 20px;
+}
+
+
+@media(max-width: 560px){
+	.header::after{
+		height:50vh;
+	}
+  .bg-modal{
+  	top: 8%;
+  	margin-top: 5px;
+  }
+  .logo{
+  	width: 50%;
+  	height: 50%;
+  }
+
+
+}
